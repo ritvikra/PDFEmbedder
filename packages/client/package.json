@@ -5,28 +5,33 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "dev:local": "ENV=local vite",
-        "dev:remote": "ENV=remote vite"
+        "dev:local": "ENV=local npx vite",
+        "dev:remote": "ENV=remote npx vite"
     },
     "dependencies": {
+        "@shadcn/ui": "^0.0.4",
         "@tanstack/react-query": "^5.67.3",
-        "@tanstack/react-router": "^1.114.15",
+        "@tanstack/react-router": "^1.115.2",
+        "axios": "^1.8.4",
         "motion": "^12.5.0",
-        "react": "^19.0.0",
-        "react-dom": "^19.0.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^7.5.0",
         "zod": "^3.24.2",
         "zustand": "^5.0.3"
     },
     "devDependencies": {
-        "@tailwindcss/postcss": "^4.0.13",
-        "@types/node": "^22.13.5",
-        "@types/react": "^19.0.10",
-        "@types/react-dom": "^19.0.4",
-        "@vitejs/plugin-react": "^4.3.4",
-        "autoprefixer": "^10.4.20",
-        "postcss": "^8.5.3",
-        "tailwindcss": "^4.0.8",
+        "@tailwindcss/postcss": "^4.1.3",
+        "@types/node": "^20.11.24",
+        "@types/react": "^18.2.61",
+        "@types/react-dom": "^18.2.19",
+        "@types/react-router-dom": "^5.3.3",
+        "@vitejs/plugin-react": "^4.2.1",
+        "autoprefixer": "^10.4.17",
+        "dotenv": "^16.5.0",
+        "postcss": "^8.4.35",
+        "tailwindcss": "^3.4.1",
         "ts-dotenv": "^0.9.1",
-        "vite": "^6.1.1"
+        "vite": "^5.1.4"
     }
 }

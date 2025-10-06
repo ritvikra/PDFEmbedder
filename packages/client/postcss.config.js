@@ -5,9 +5,7 @@ const dirname = getDirname(fileURLToPath(import.meta.url))
 
 export default {
     plugins: {
-        '@tailwindcss/postcss': {
-            config: join(dirname, './tailwind.config.ts')
-        },
+        tailwindcss: {},
         autoprefixer: {}
     }
 }

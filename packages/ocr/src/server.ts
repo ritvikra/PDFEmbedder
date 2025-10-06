@@ -5,12 +5,7 @@ import { LoremIpsum } from 'lorem-ipsum'
 
 const xss = express()
 
-xss.use(
-    cors({
-        origin: 'http://localhost:3000',
-        credentials: true
-    })
-)
+xss.use(cors());
 
 xss.post('/ocr', express.raw({ type: 'image/jpeg', limit: '10mb' }), async (req, res) => {
     if (!(req.body instanceof Buffer) || !(req.body.buffer instanceof ArrayBuffer)) {
